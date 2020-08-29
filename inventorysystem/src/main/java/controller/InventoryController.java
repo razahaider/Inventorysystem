@@ -18,7 +18,7 @@ import service.InventoryService;
 public class InventoryController {
 //please use test class with main methods to test functionality(dao)
 
-	private InventoryService inService = new InventoryService();
+	private static InventoryService inService = new InventoryService();
 
 	@GET
 	@Path("/getproducts")
