@@ -58,4 +58,13 @@ public class InventoryService {
 			return "Item stock available is: " + status;
 		}
 	}
+	public String deleteOrderData(int orderId) {
+		// TODO Auto-generated method stub
+		int status=orderDao.deleteOrder(orderId);
+		if(status==1) {
+			return "Item successfully deleted";
+		}
+		else
+		return "Item unsuccessful in delete operation";
+	}
 }
