@@ -61,6 +61,7 @@ public class OrdersDaoImpl implements OrdersDao{
 				 ps=con.prepareStatement(createOrder);
 				 ps.setString(1, product);
 				  ps.executeUpdate();
+				return 1;
 			}
 			
 		} catch (ClassNotFoundException e) {
