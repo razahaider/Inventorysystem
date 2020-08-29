@@ -127,7 +127,7 @@ public class OrdersDaoImpl implements OrdersDao{
 						//	product1 = rs.getString(1);
 							orderCount = rs.getInt(1);
 						}
-					if (itemstock<=orderCount) {
+					if (itemstock>=orderCount) {
 						return (itemstock-orderCount);
 					}
 					else {
