@@ -9,3 +9,4 @@ http://localhost:8080/inventorysystem/webapi/myinventory/products/ll1
 
 http://localhost:8080/inventorysystem/webapi/myinventory/orders/create/sp1
 
+http://localhost:8080/inventorysystem/webapi/myinventory/orders/delete/3
