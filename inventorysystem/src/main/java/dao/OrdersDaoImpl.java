@@ -85,8 +85,8 @@ public class OrdersDaoImpl implements OrdersDao{
 					
 					 ps=con.prepareStatement(deleteOrder);
 					 ps.setInt(1, orderId);
-					  ps.executeUpdate();
-					return 1;
+					return  ps.executeUpdate();
+					 
 					
 				} catch (ClassNotFoundException e) {
 					// TODO Auto-generated catch block
