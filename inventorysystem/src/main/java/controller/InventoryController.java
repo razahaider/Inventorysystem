@@ -65,4 +65,12 @@ public class InventoryController {
 
 		return inService.availableStockData(product);
 	}
+	
+	@DELETE
+	@Path("/orders/delete/{orderId}")
+	@Produces(MediaType.TEXT_PLAIN)
+	public String deleteOrder(@PathParam("orderId") Integer ordId) {
+
+		return inService.deleteOrderData(ordId);
+	}
 }
